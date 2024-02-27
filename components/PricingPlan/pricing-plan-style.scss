@@ -1,0 +1,93 @@
+.root {
+  position: relative;
+  z-index:55;
+}
+
+.subtitle {
+  margin-bottom: $spacing5
+}
+
+.decoration {
+  z-index: -1;
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  svg {
+    width: 1280px;
+    height: 100%;
+    @include use-theme(fill, $palette-primary-light, $palette-primary-dark);
+    opacity: 0.2;
+    @include breakpoints-up(md) {
+      transform: scale(1.3, 1)
+
+    }
+    @include breakpoints-up(lg) {
+      transform: scale(1.7, 1);
+    }
+    @include breakpoints-up(xl) {
+      display: none
+    }
+    @include breakpoints-down(xs) {
+      transform: scale(0.5);
+      transform-origin: center left
+    }
+  }
+}
+
+
+  .item {
+    position: relative;
+    z-index: 60;
+  }
+
+  .col-3 {
+    margin-bottom: 20px;
+  }
+
+span {
+    font: bold 36pt helvetica, arial, sans-serif;
+    color: #ccc;
+    line-height: 25px;
+  }
+  
+p {
+    font: 16pt 'Poppins','Fira Mono', helvetica, arial, sans-serif;
+    color: $dark-text-primary;
+    padding-left: 40px;
+    text-transform:uppercase;
+  }
+  
+  .pricing-wrap.subt {
+    z-index:99;
+    font-style: 12pt 'Fira Mono', helvetica, arial, sans-serif;
+    color: $dark-text-primary;
+    padding-left: 40px;
+    opacity: 80%;
+    text-transform:none;
+  }
+
+
+  .releases {
+    text-align:center;
+    margin: 20px;
+  }
+
+
+.lpcode {
+  z-index:99 !important;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  background:#292E39;
+  padding:12px 0px 12px 6px;
+  color:#ecf0f1;
+  border-radius:5px;
+  width:80% !important;
+  overflow-x:auto !important;
+  white-space: pre;
+  font-weight:300;
+  @include breakpoints-down(md) {
+    width: 100% !important;
+    margin-left: 0px; 
+  }
+}

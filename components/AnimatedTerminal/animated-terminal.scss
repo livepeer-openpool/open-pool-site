@@ -1,0 +1,115 @@
+.terminal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 360px;
+  width: 100%;
+  background: #292E39;
+  border-radius: 5px;
+}
+
+.controls {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 5%;
+  display: flex;
+}
+
+.circle {
+  width: 3.5%;
+  height: 98%;
+  border-radius: 50%;
+  transform: scale(0.7);
+}
+
+.minimize {
+  margin: 0 5px;
+  background: #F2C429;
+}
+
+.close {
+  background: #DB5963;
+  margin-left: 10px;
+}
+
+.expand {
+  background: #48CE37;
+}
+
+span {
+  display: inline-block;
+}
+
+.prompt {
+  color: #5F5F5E;
+  margin-right: 15px;
+}
+
+.commandline {
+  position: absolute;
+  display: flex;
+  top: 40px;
+  width: 100%;
+  height: 15%;
+  padding: 15px;
+  color: #EFEFF2;
+}
+
+.blink {
+  display: inline;
+  margin-left: 3px;
+  width: 10px;
+  height: 25px;
+  background: #EFEFF2;
+  transition: all 0.35s;
+  animation: blinking 1s infinite;
+}
+
+.loading {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  top: 90px;
+  width: 100%;
+  height: 15%;
+  padding: 15px;
+  color: #EFEFF2;
+}
+
+.bars {
+  height: 70%;
+  display: flex;
+  margin-left: 25px;
+}
+
+.bar {
+  width: 8px;
+  height: 100%;
+  background: #EFEFF2;
+  margin-right: 1px;
+}
+
+.percent {
+  margin-left: 10px;
+}
+@keyframes letter1 {
+  0% {
+    display: none;
+  }
+  100% {
+    display: inline-block;
+  }
+}
+
+@keyframes blinking {
+  0% {
+    background: #EFEFF2;
+  }
+  50% {
+    background: transparent;
+  }
+   100% {
+    background: #EFEFF2;
+  }
+}

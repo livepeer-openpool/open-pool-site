@@ -1,0 +1,15 @@
+ h3 {
+    opacity: 75%;
+  }
+
+  img {
+    opacity: 75%;
+    height: 44px;
+    margin: $spacing2;
+    filter: grayscale(1) contrast(0.5) brightness(1.5);
+    transition: all 0.3s ease-out;
+    &:hover {
+      filter: none
+    }
+  }
+

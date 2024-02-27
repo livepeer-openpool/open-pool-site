@@ -1,0 +1,84 @@
+.root {
+  position: relative;
+  z-index: 56
+}
+
+.text {
+  position: relative;
+  z-index: 20
+}
+
+.illustration {
+  position: relative;
+  margin: spacing(6, 6, 0);
+  > div {
+    top: -400px;
+  }
+  img {
+    display: block;
+    width: 280px
+  }
+}
+
+.accordion {
+  position: relative;
+}
+
+.item {
+  margin-bottom: $spacing3
+}
+
+.paper {
+  border-radius: $rounded-medium !important;
+  margin-bottom: $spacing3;
+  overflow: hidden;
+  background: #292E39 !important;
+}
+
+.heading {
+  font-weight: $font-medium;
+  padding: spacing(1, 2, 1, 0);
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 0;
+  @include breakpoints-down(xs) {
+    font-size: 16px;
+  }
+}
+
+.content {
+  .icon {
+    position: absolute;
+    top: 20px;
+    @include right($spacing2)
+  }
+}
+
+.expanded {
+  background: $palette-primary-main !important;
+  .heading {
+    color: $palette-common-white;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  ::v-deep .v-icon {
+    color: $palette-common-white !important;
+    transform: rotate(180deg)
+  }
+}
+
+.detail {
+ background:#292E39;
+  padding-top: $spacing3;
+  border-radius: 0 0 $rounded-medium $rounded-medium;
+  p {
+    font-size: 18px;
+    @include breakpoints-down(xs) {
+      font-size: 16px;
+    }
+  }
+}
+
+.icon {
+  @include use-theme(color, $palette-primary-main, $palette-primary-light);
+}

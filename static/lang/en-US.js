@@ -1,0 +1,100 @@
+export default () => {
+  return new Promise(function (resolve) {
+    resolve({
+      common: {
+        title: 'Open Pool',
+        subtitle: "It's a blank-page. Start to build your'e page from here.",
+        error_with_status: 'An error occurred on server',
+        '404': 'This page could not be found.',
+        '404_subtitle':
+          'You can either stay and chill here, or go back to the beginning.',
+        back: 'back to home',
+        error_without_status: 'An error occurred on the server',
+        contact_title: 'Free Project Quote',
+        contact_title2: 'Say Hello to Us',
+        contact_subtitle:
+          'Do you have any questions? Are you ready to reduce cost and create new revenue? Or you simply want to say hi? Drop us a message.',
+        form_name: 'What is your name? *',
+        form_email: 'What it your email? *',
+        form_phone: 'What is your phone number?',
+        form_company: 'What is your company?',
+        form_message: 'Write your message here',
+        form_terms: 'I have read and accept the Terms of',
+        form_privacy: 'Service & Privacy Policy *',
+        form_send: 'Send Message',
+        login: 'login',
+        login_create: 'Create new account',
+        login_or: 'Or login with email',
+        login_email: 'Email',
+        login_password: 'Password',
+        login_remember: 'Remember',
+        login_forgot: 'Forgot Password',
+        continue: 'Continue',
+        login_title: 'Welcome back',
+        login_subtitle: 'Please login to continue',
+        register: 'Register',
+        register_already: 'Already have account?',
+        register_or: 'Or register with email',
+        register_name: 'Name? *',
+        register_email: 'Email? *',
+        register_password: 'Password',
+        register_confirm: 'Confirm Password',
+        register_title: 'Nice to meet you :)',
+        register_subtitle: 'Just register to join with us',
+        accept: 'Accept',
+        en: 'English',
+      },
+      saasLanding: {
+        header_openapp: 'Open App',
+        header_language: 'language',
+        header_theme: 'Theme mode',
+        header_dark: 'dark',
+        header_light: 'light',
+        header_about: 'About',
+        header_staking: 'Staking',
+        header_get_started: 'Quickstart',
+        header_download: 'Downloads',
+        header_faq: 'FAQ',
+        header_contact: 'Contact',
+        banner_title: "World's First",
+        banner_titlestrong: "VIDEO 'MINING' POOL",
+        banner_subtitle: 'Transcode Video, Get Paid',
+        banner_watchvideo: 'Watch Video',
+        getstarted: 'Get Started',
+        counter_month: 'Month',
+        counter_free: 'Free Trial',
+        counter_users: 'Active Users',
+        counter_providers: 'Providers',
+        feature_title1: 'Put your GPUs',
+        feature_titlestrong1: 'to work',
+        feature_desc1:
+          'Anyone can connect their Video Cards to Open Pool to transcode video and earn passive income for doing so.',
+        see_detail: 'See Detail',
+        feature_title2: 'What is',
+        feature_titlestrong2: 'Video Transcoding?',
+        feature_desc2:
+          "Transcoding is the process of taking a raw video file and reformatting it so that no matter what bandwidth you have - whether 2g or 5g - and no matter what device, you're ensured the most optimal viewing experience.",
+        feature_title3: 'Mine, Game or Render and',
+        feature_titlestrong3: 'transcode in parallel',
+        feature_desc3:
+          'Transcoding is mainly offloaded to specific chips on your video card. The process is very energy efficient, unlike mining, and uses a small amount of memory.This means you can mine crypto, render or play videogames while transcoding video!',
+        feature_title4: 'Built on top of the',
+        feature_titlestrong4: 'Livepeer Network',
+        feature_desc4:
+          'Livepeer is a live video streaming network protocol that is fully decentralized, highly scalable, crypto token incentivized, and results in an infrastructure solution which is cheaper to an app developer or broadcaster than using traditional centralized live video solutions and cloud service providers.',
+        testi_title: 'Staking Livepeer Tokens',
+        testi_content:
+          "Staking your Livepeer Tokens (LPT) to Open Pool has several benefits: you earn inflationairy LPT rewards, you earn a share of Open Pool's transcoding rewards in ETH and you help the pool win more work. <br /><br/> To stake your Livepeer tokens go to the Livepeer Explorer",
+        pricing_title: 'Get Started',
+        pricing_subtitle:
+          'Set up a Transcoder and connect to Open Pool in minutes',
+        faq_subtitle:
+          'Have a question? Check out our frequently asked questions to find your answer.',
+        caption_news: 'news',
+        caption_event: 'event',
+        news_readmore: 'read more',
+        footer_waiting: 'What are you waiting for?'
+      }
+    })
+  })
+}

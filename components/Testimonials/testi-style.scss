@@ -1,0 +1,196 @@
+
+.root {
+  position: relative;
+  @include breakpoints-up(sm) {
+    padding-bottom: $spacing8
+  }
+  @include breakpoints-down(md) {
+    background: linear-gradient(-45deg, $palette-primary-main 20%, $palette-primary-dark 70%);
+  }
+  @include breakpoints-down(xs) {
+    padding-bottom: $spacing10
+  }
+}
+
+.slider-wrap {
+  position: relative;
+}
+
+.overflow {
+  overflow: visible;
+}
+
+.decoration {
+  position: absolute;
+  top: 0;
+  width: 830px;
+  height: 600px;
+  @include left(-160px);
+  @include breakpoints-down(md) {
+    @include left(-320px)
+  }
+  svg {
+    fill: $palette-primary-main;
+    transform: scale(1.2);
+    width: 100%;
+    height: 100%
+  }
+}
+
+.wrapper-content {
+  position:relative;
+  top:50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.staking-content.testi-title {
+  z-index: 99;
+  position: relative;
+  padding-top: $spacing7;
+  color: $palette-common-white;
+  strong {
+    font-weight: $font-bold
+  }
+}
+
+.staking-content.testi-subtitle {
+  position: relative;
+  padding-top: $spacing4;
+  color: $palette-common-white;
+  opacity:80%;
+  strong {
+    font-weight: $font-bold
+  }
+}
+
+.sliderWrap {
+  position: relative
+}
+
+
+.item {
+  position: relative;
+  min-height: 320px;
+  margin-bottom: $spacing20;
+  .desc {
+    position: relative;
+    z-index: 60
+  }
+  &.last {
+    margin-bottom: $spacing10
+  }
+  @include breakpoints-down(md) {
+    margin-bottom: $spacing15
+  }
+  @include breakpoints-down(sm) {
+    text-align: center
+  }
+  h6 {
+    margin-bottom: $spacing5
+  }
+  .parallax-wrap {
+    .Masthead {
+      overflow: visible;
+      min-height: 80vh;
+      @include breakpoints-down(xs) {
+        min-height: 30vh
+      }
+    }
+    @include breakpoints-up(md) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    @include breakpoints-down(sm) {
+      margin: spacing(3, 0)
+    }
+    @include breakpoints-down(xs){
+      margin: 0
+    }
+    .viewport  {
+      perspective: 1000px
+    }
+  }
+  .figure {
+    transform-style: preserve-3d;
+    overflow: hidden;
+    @include shadow3;
+    border-radius: $rounded-medium;
+    background: $palette-common-white;
+    padding: $spacing1;
+    padding-top: $spacing3;
+    margin: $spacing3;
+    img {
+      width: 100%
+    }
+  }
+}
+
+.screen {
+  position: relative;
+  img {
+    width: 90%;
+    display: block
+  }
+}
+.graphic {
+  position: relative;
+  img {
+    width: 90%;
+    display: block
+  }
+}
+
+
+.illustration-right {
+  position: relative;
+  z-index: 2;
+  top: 0;
+  @include breakpoints-up(md) {
+    top: 80px;
+  }
+  .screen {
+    @include breakpoints-up(md) {
+      @include left(-20px);
+      top: 40px;
+      margin-top: 400px;
+      .v-application--is-ltr & {
+        transform: rotateY(-30deg)
+      }
+      .v-application--is-rtl & {
+        transform: rotateY(30deg)
+      }
+    }
+  }
+  .graphic {
+    @include right(-60px);
+    width: 200px;
+    left: 350px;
+    top: 200px;
+    @media screen and (min-width: 1400px) {
+      top: 200px;
+    }
+    @media screen and (max-width: 1265px) {
+      top: 200px;
+      display:none;
+    }
+    @include breakpoints-up(md) {
+      transform-style: preserve-3d;
+      .v-application--is-ltr & {
+        transform: rotateY(-29deg) rotateX(1deg) rotateZ(-2deg)
+      }
+      .v-application--is-rtl & {
+        transform: rotateY(29deg) rotateX(1deg) rotateZ(-2deg)
+      }
+    }
+  }
+}
+
+.btn-cta {
+  z-index: 999;
+  .v-icon{
+    font-size: 12px;
+  }
+}
